@@ -1,0 +1,488 @@
+
+/* =================================
+   1. GLOBAL CSS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf3f7;
+    color: #19364c;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 35px 38px;
+}
+
+
+/* =================================
+   2. PAGE HEADER
+================================= */
+
+.page-header {
+    margin-bottom: 35px;
+}
+
+.breadcrumb {
+    color: #08777c;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.page-header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #60778a;
+    font-size: 16px;
+}
+
+
+/* =================================
+   3. DESKTOP PREVIEW
+================================= */
+
+.preview-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+}
+
+.preview-column {
+    width: 100%;
+    min-width: 0;
+}
+
+.preview-column > h3 {
+    color: #08777c;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+
+/* =================================
+   4. CAFE MAIN CONTAINER
+================================= */
+
+.cafe {
+    width: 100%;
+    background: white;
+    border: 1px solid #cad9df;
+    overflow: hidden;
+}
+
+
+/* =================================
+   5. CAFE HEADER
+================================= */
+
+.cafe-header {
+    background: #153f41;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 18px;
+}
+
+.cafe-header strong {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.cafe nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cafe nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.cafe nav a:hover {
+    color: #f4d99a;
+}
+
+
+/* =================================
+   6. HERO SECTION
+================================= */
+
+.hero {
+    background: #285a4b;
+    color: white;
+    padding: 25px;
+}
+
+.hero small {
+    display: block;
+    color: #f4d99a;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero button {
+    background: #14767b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 25px;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #0b666b;
+}
+
+
+/* =================================
+   7. FAVOURITES SECTION
+================================= */
+
+.favourites {
+    padding: 20px;
+    background: white;
+}
+
+.favourites h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background: #f4f8f7;
+    border: 1px solid #d1e0e4;
+    border-radius: 7px;
+
+    padding: 15px;
+    min-width: 0;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #14767b;
+}
+
+.card h4 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 12px;
+    color: #526b7b;
+}
+
+
+/* =================================
+   8. CAFE IMAGE SECTION
+================================= */
+
+.cafe-content {
+    padding: 0 20px 20px;
+}
+
+.mountain {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #dcebe0;
+}
+
+.mountain img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.address {
+    font-size: 12px;
+    color: #526b7b;
+}
+
+
+/* =================================
+   9. CAFE FOOTER
+================================= */
+
+.cafe-footer {
+    background: #153f41;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+}
+
+.cafe-footer strong {
+    font-size: 13px;
+}
+
+/* =================================
+   10. TABLET MEDIA QUERY
+   Screen: 481px to 768px
+================================= */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+    .cafe-header {
+        padding: 12px;
+    }
+
+    .cafe-header strong {
+        font-size: 12px;
+    }
+
+    .cafe nav {
+        gap: 9px;
+    }
+
+    .cafe nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .favourites {
+        padding: 15px;
+    }
+
+    .favourites h3 {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h4 {
+        font-size: 12px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .mountain {
+        height: 140px;
+    }
+
+}
+
+/* =================================
+   11. MOBILE MEDIA QUERY
+   Screen: 480px and below
+================================= */
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        padding: 20px 14px;
+    }
+
+    /* Header */
+
+    .breadcrumb {
+        font-size: 10px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .page-header p {
+        font-size: 12px;
+    }
+
+    /* Cafe Header */
+
+    .cafe-header {
+        display: block;
+        padding: 13px;
+    }
+
+    .cafe-header strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cafe nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .cafe nav a {
+        font-size: 11px;
+    }
+
+    /* Hero */
+
+    .hero {
+        padding: 18px 14px;
+    }
+
+    .hero small {
+        font-size: 9px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .hero button {
+        padding: 10px 24px;
+        font-size: 12px;
+    }
+
+    /* Favourites */
+
+    .favourites {
+        padding: 15px 12px;
+    }
+
+    .favourites h3 {
+        font-size: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 13px;
+        border-radius: 8px;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    /* Image */
+
+    .cafe-content {
+        padding: 0 12px 15px;
+    }
+
+    .mountain {
+        height: 160px;
+    }
+
+    .quote {
+        font-size: 12px;
+    }
+
+    .address {
+        font-size: 11px;
+    }
+
+    /* Footer */
+
+    .cafe-footer {
+        display: block;
+        padding: 14px;
+    }
+
+    .cafe-footer strong {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .cafe-footer nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+}
+

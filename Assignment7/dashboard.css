@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #edf3f7;
+    color: #1c3a50;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* PAGE HEADING */
+
+.breadcrumb {
+    color: #087c80;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-heading h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #60768a;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #087c80;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* MAIN DASHBOARD GRID */
+
+.dashboard {
+    display: grid;
+
+    grid-template-columns: 1fr 3.3fr;
+
+    grid-template-rows: 45px minmax(335px, auto) 45px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    gap: 12px;
+}
+
+/* HEADER */
+
+.dashboard-header {
+    grid-area: header;
+
+    background: #174247;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+}
+
+.dashboard-header h2 {
+    font-size: 14px;
+}
+
+.dashboard-header nav {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.dashboard-header a:hover {
+    color: #a8dcd5;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    grid-area: sidebar;
+
+    background: #dcebea;
+    border: 1px solid #cbd9e2;
+    border-radius: 9px;
+
+    padding: 18px;
+}
+
+.sidebar h2 {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #294a61;
+    font-size: 15px;
+}
+
+.sidebar a:hover {
+    color: #087c80;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    grid-area: main;
+
+    background: white;
+    border: 1px solid #cbd9e2;
+    border-radius: 9px;
+
+    padding: 16px 20px;
+}
+
+.main-content > h2 {
+    font-size: 19px;
+    margin-bottom: 23px;
+}
+
+/* LEARNING CARDS */
+
+.learning-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.learning-card {
+    background: #f6faf9;
+    border: 1px solid #cbd9e2;
+    border-radius: 9px;
+
+    min-height: 112px;
+    padding: 12px;
+}
+
+.learning-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.learning-card p {
+    font-size: 13px;
+    color: #294a61;
+}
+
+/* ACTIVITY */
+
+.activity-text {
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+.dashboard-footer {
+    grid-area: footer;
+
+    background: #174247;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+}
+
+.dashboard-footer h2 {
+    font-size: 14px;
+}
+
+.dashboard-footer nav {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.dashboard-footer a:hover {
+    color: #b36319;
+}
+ 
+/* PAGE FOOTER */
+
+.page-footer {
+    margin-top: 12px;
+    color: #60768a;
+    font-size: 12px;
+}

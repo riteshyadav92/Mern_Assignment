@@ -1,0 +1,91 @@
+
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+    background: #edf3f6;
+    color: #1b394e;
+    font-family: Arial, sans-serif;
+    padding: 36px;
+}
+
+/* Main Container */
+
+.page {
+    max-width: 1120px;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+
+/* Product Flexbox Container */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: stretch;
+}
+
+/* Product Card */
+
+.product-card {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 9px;
+
+    background: white;
+    border: 1px solid #cbd9e2;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+/* Product Image */
+
+.product-card img {
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+
+    border: 1px solid #cbd9e2;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Product Name */
+
+.product-card h3 {
+    margin: 10px 3px 7px;
+    font-size: 17px;
+    color: #1b394e;
+}
+
+/* Product Price */
+
+.product-card p {
+    margin: 0 3px 5px;
+    font-size: 15px;
+    color: #344f65;
+}
+
+/* Hover Effect */
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px
+                rgba(27, 57, 78, 0.12);
+}
